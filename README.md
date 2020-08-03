@@ -1,5 +1,5 @@
-# PQExtensionForBox
-Use custom connector to access box files in PowerBI
+## Use custom connector to access box files in PowerBI
+*Read this in other languages: [English](README.md), [“ú–{Œê](README.ja.md).*
 
 The way to use this project.
 
