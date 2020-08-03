@@ -1,4 +1,4 @@
-## Use custom connector to access box files in PowerBI
+## カスタムコネクタを使用してPower BIのボックスファイルにアクセスする
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
 The way to use this project.
