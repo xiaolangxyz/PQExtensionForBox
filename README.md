@@ -1,5 +1,5 @@
 ## Use custom connector to access box files in PowerBI
-*Read this in other languages: [English](README.md), [“ú–{Œê](README.ja.md).*
+*Read this in other languages: [English](README.md), [æ—¥æœ¬èªž](README.ja.md).*
 
 The way to use this project.
 
