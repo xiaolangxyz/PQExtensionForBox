@@ -3,6 +3,8 @@
 
 このプロジェクトの使い方.
 
+requirements: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
+
 1. Step1: ボックスのアプリを作成する. [開発者コンソールに移動](https://developer.box.com/)
 
        1. 「企業統合」を選択する。
@@ -28,6 +30,8 @@
        1. PQExtensionForBox\bin\Debug\PQExtensionForBox.mezをDocuments\Power BI Desktop\Custom Connectorsにコピーする。
 
 4. Step4: Power BI Desktopでboxのファイルを接続する。
+
+	   1. コネクタの機能拡張を設定する。[ここ](https://docs.microsoft.com/ja-jp/power-bi/connect-data/desktop-connector-extensibility#custom-connectors)を参考する。
 
        1. Power BI Desktopを開く。
 

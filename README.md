@@ -3,6 +3,8 @@
 
 The way to use this project.
 
+requirement: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
+
 1. Step1: Create a box app. [Go to Dev Console](https://developer.box.com/)
 
        1. Choose Enterprise integration.
@@ -28,6 +30,8 @@ The way to use this project.
        1. Copy PQExtensionForBox\bin\Debug\PQExtensionForBox.mez to Documents\Power BI Desktop\Custom Connectors.
 
 4. Step4: Access box files throught  Power BI Desktop.
+
+	   1. Set custom connectors. Follow the steps [here](https://docs.microsoft.com/ja-jp/power-bi/connect-data/desktop-connector-extensibility#custom-connectors).
 
        1. Open Power BI Desktop.
 
