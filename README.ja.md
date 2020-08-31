@@ -13,6 +13,8 @@ requirements: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketpl
 	   
 	   3. アプリの名前を入力し、アプリを作成する。
 	   
+	   1. OAuth 2.0リダイレクトURIとCORSドメインを「https://oauth.powerbi.com/views/oauthredirect.html」に設定する。
+
 	   4. OAuth 2.0資格情報のクライアントIDとクライアント機密コードをメモする。
 	   
 2. Step2: mezファイルをビルドする。

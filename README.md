@@ -3,7 +3,7 @@
 
 The way to use this project.
 
-requirement: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
+requirements: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
 
 1. Step1: Create a box app. [Go to Dev Console](https://developer.box.com/)
 
@@ -12,6 +12,8 @@ requirement: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketpla
 	   2. Choose Standard OAuth 2.0(User Authentication).
 	   
 	   3. Name your app and create it.
+
+	   1. set (https://oauth.powerbi.com/views/oauthredirect.html) to OAuth 2.0 redirect URI and CORS domain.
 	   
 	   4. Memorize your client ID and Client secret which is in Configuration page.
 	   
