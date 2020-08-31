@@ -3,7 +3,11 @@
 
 このプロジェクトの使い方.
 
-requirements: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
+requirements: 
+
+       1. Visual Studio 2015, 2017, 2019,
+
+	   2. [Power Query SDK](https://marketplace.visualstudio.com/items?itemName=Dakahn.PowerQuerySDK)
 
 1. Step1: ボックスのアプリを作成する. [開発者コンソールに移動](https://developer.box.com/)
 
@@ -13,9 +17,9 @@ requirements: Visual Studio 2015, 2017, 2019, [Power Query SDK](https://marketpl
 	   
 	   3. アプリの名前を入力し、アプリを作成する。
 	   
-	   1. OAuth 2.0リダイレクトURIとCORSドメインを「https://oauth.powerbi.com/views/oauthredirect.html」に設定する。
+	   4. OAuth 2.0リダイレクトURIとCORSドメインを「https://oauth.powerbi.com/views/oauthredirect.html」に設定する。
 
-	   4. OAuth 2.0資格情報のクライアントIDとクライアント機密コードをメモする。
+	   5. OAuth 2.0資格情報のクライアントIDとクライアント機密コードをメモする。
 	   
 2. Step2: mezファイルをビルドする。
 
