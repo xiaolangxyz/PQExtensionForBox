@@ -8,8 +8,10 @@ redirect_uri = "https://oauth.powerbi.com/views/oauthredirect.html";
 windowWidth = 1200;
 windowHeight = 1000;
 
-[DataSource.Kind="PQExtensionForBox", Publish="PQExtensionForBox.Publish"]
-shared PQExtensionForBox.Simple = (folderUri as text) as table =>
+[DataSource.Kind="PQExtensionForBox", Publish="PQExtensionForBox.UI"]
+shared BoxSample.Contents = Value.ReplaceType(PQExtensionForBox.Contents, type function (url as Uri.Type) as any);
+
+shared PQExtensionForBox.Contents = (folderUri as text) as table =>
     let
         objects = #table(
             {"Name",       "Key",          "Data",                                "ItemKind", "ItemName", "IsLeaf"},
@@ -48,14 +50,15 @@ GetFileContents = (objectType, fileId, fileName)  =>
 
 // Data Source Kind description
 PQExtensionForBox = [
-    TestConnection = (dataSourcePath) => {"PQExtensionForBox.Simple", dataSourcePath},
+    TestConnection = (dataSourcePath) => {"PQExtensionForBox.Contents", dataSourcePath},
     Authentication = [
         // Key = [],
         // UsernamePassword = [],
         // Windows = [],
         OAuth = [
             StartLogin = StartLogin,
-            FinishLogin =FinishLogin
+            FinishLogin =FinishLogin,
+            Label = Extension.LoadString("AuthenticationLabel")
         ],
         Implicit = []
     ],
@@ -67,7 +70,9 @@ StartLogin = (resourceUrl, state, display) =>
         let
             AuthorizeUrl = "https://account.box.com/api/oauth2/authorize?" & Uri.BuildQueryString([
                 client_id = client_id,
+                //scope="root_readwrite",
                 response_type="code",
+                state = state,
                 redirect_uri = redirect_uri])
         in
             [
@@ -92,14 +97,15 @@ TokenMethod = (code) =>
                 client_id = client_id,
                 client_secret = client_secret,
                 code = code,
-                grant_type = "authorization_code"])),
+                grant_type = "authorization_code",
+                redirect_uri = redirect_uri])),
             Headers=[#"Content-type" = "application/x-www-form-urlencoded",#"Accept" = "application/json"]]),
         Parts = Json.Document(Response)
     in
         Parts;
 
 // Data Source UI publishing description
-PQExtensionForBox.Publish = [
+PQExtensionForBox.UI = [
     Beta = true,
 //    SupportsDirectQuery = true,     // enables direct query
     Category = "Other",

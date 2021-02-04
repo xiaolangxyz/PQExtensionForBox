@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AuthenticationLabel" xml:space="preserve">
+    <value>Box Auth</value>
+  </data>
   <data name="ButtonHelp" xml:space="preserve">
     <value>Connect to PQExtensionForBox</value>
   </data>
@@ -124,6 +127,12 @@
     <value>PQExtensionForBox</value>
   </data>
   <data name="DataSourceLabel" xml:space="preserve">
+    <value>PQExtensionForBox</value>
+  </data>
+  <data name="FormulaHelp" xml:space="preserve">
+    <value>XXX.Contents</value>
+  </data>
+  <data name="FormulaTitle" xml:space="preserve">
     <value>PQExtensionForBox</value>
   </data>
 </root>
