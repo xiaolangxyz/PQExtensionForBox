@@ -19,7 +19,9 @@ requirements:
 	   
 	   4. OAuth 2.0リダイレクトURIとCORSドメインを「https://oauth.powerbi.com/views/oauthredirect.html」に設定する。
 
-	   5. OAuth 2.0資格情報のクライアントIDとクライアント機密コードをメモする。
+	   5. 「[別のユーザーとして実行] 機能を使用してAPI呼び出しを行う」をチェックする。
+	   
+	   6. OAuth 2.0資格情報のクライアントIDとクライアント機密コードをメモする。
 	   
 2. Step2: mezファイルをビルドする。
 
