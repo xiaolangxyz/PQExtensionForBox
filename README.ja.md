@@ -11,9 +11,9 @@ requirements:
 
 1. Step1: ボックスのアプリを作成する. [開発者コンソールに移動](https://developer.box.com/)
 
-       1. 「企業統合」を選択する。
+       1. 「カスタムアプリ」を選択する。
 	   
-	   2. [標準OAuth 2.0(ユーザー認証)]を選択する。
+	   2. [ユーザー認証 (OAuth 2.0)]を選択する。
 	   
 	   3. アプリの名前を入力し、アプリを作成する。
 	   
@@ -33,7 +33,7 @@ requirements:
 	   
 3. Step3: mezファイルをPower BIの環境にコピーする。
 
-       1. PQExtensionForBox\bin\Debug\PQExtensionForBox.mezをDocuments\Power BI Desktop\Custom Connectorsにコピーする。
+       1. Power BI DesktopにおけるCustom Connectorsのフォルダーにmezファイルをコピーする。
 
 4. Step4: Power BI Desktopでboxのファイルを接続する。
 
